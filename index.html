@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria Flexbox</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Responsive Image Gallery</h1>
+        <div class="gallery-area">
+            <div class="single-img">
+                <img src="https://images.pexels.com/photos/1340428/pexels-photo-1340428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            </div>
+            <div class="single-img">
+                <img src="https://images.pexels.com/photos/1340428/pexels-photo-1340428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            </div>
+            <div class="single-img">
+                <div class="overlay">
+                    <button>Kliknij</button>
+                </div>
+                <img src="https://images.pexels.com/photos/1340428/pexels-photo-1340428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            </div>
+            <div class="single-img">
+                <img src="https://images.pexels.com/photos/1340428/pexels-photo-1340428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            </div>
+            <div class="single-img">
+                <img src="https://images.pexels.com/photos/1340428/pexels-photo-1340428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            </div>
+            <div class="single-img">
+                <img src="https://images.pexels.com/photos/1340428/pexels-photo-1340428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        overlay();
+
+        function overlay() {
+            let button = document.querySelector("button");
+            console.log(button);
+            button.addEventListener("click", function() {
+                button.classList.add("display-none");
+            });
+
+            // el.addEventListener("click", modifyText, false)
+        }
+    </script>
+</body>
+
+</html>
